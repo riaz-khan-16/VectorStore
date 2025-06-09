@@ -32,3 +32,4 @@ db = Chroma.from_documents(documents,embeddings)
 query = "Riaz"
 docs = db.similarity_search(query)
 print(docs[0].page_content)
+
