@@ -1,6 +1,6 @@
 This is a simple vector store. 
->> We used Langchain, Chroma, Cohere
->> The contextual compression enables to give the relevant response.
+1. We used Langchain, Chroma, Cohere
+2. The contextual compression enables to give the relevant response.
 
 To run this 
 
