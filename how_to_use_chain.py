@@ -16,8 +16,10 @@ prompt = PromptTemplate(
     input_variables=["topic"],
     template="Explain the concept of {topic} in simple terms."
 )
-
-chain=LLMChain(llm=llm, prompt=prompt)
+#method 1
+# chain=LLMChain(llm=llm, prompt=prompt)
+#method 2
+chain=prompt|llm
 result = chain.invoke({"topic": "blockchain"})
 
 print(result)
